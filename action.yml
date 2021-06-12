@@ -16,3 +16,6 @@ runs:
     KUBERNETES_VERSION: ${{ inputs.version}}
   args:
     - ${{ inputs.args }}
+branding:
+  icon: 'check-circle'
+  color: 'blue'
