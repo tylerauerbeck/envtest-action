@@ -5,8 +5,14 @@ inputs:
     description: 'Version of the envtest assets'
     required: true
     default: '1.20.2'
+  args:
+    description: 'Arguments passed to the go test command'
+    required: false
+    default: './...'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  env:
+    KUBERNETES_VERSION: ${{ inputs.version}}
   args:
-    - ${{ inputs.version }}
+    - ${{ inputs.args }}
