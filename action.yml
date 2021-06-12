@@ -1,0 +1,12 @@
+name: 'Envtest'
+description: 'Run tests with envtest - integration tests for kubernetes custom controllers'
+inputs:
+  version:
+    description: 'Version of the envtest assets'
+    required: true
+    default: '1.20.2'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.version }}
