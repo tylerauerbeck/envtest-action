@@ -1,4 +1,4 @@
-name: 'Envtest'
+name: 'Envtest Action'
 description: 'Run tests with envtest - integration tests for kubernetes custom controllers'
 inputs:
   version:
