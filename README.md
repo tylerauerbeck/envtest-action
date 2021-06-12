@@ -18,7 +18,7 @@ Example usage
 ---
 
 ```yaml
-uses: phalanks/envtest-action@v1
+uses: phalanks/envtest-action@v1.0.0-rc
 with:
   version: '0.20.2'
   args: './...'
