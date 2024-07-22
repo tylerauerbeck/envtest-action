@@ -1,6 +1,6 @@
-FROM golang:1.20
+FROM golang
 
-ENV KUBERNETES_VERSION="1.27"
+ENV KUBERNETES_VERSION="1.29"
 ENV ARGS="./..."
 
 COPY scripts/envtest.sh /envtest.sh
